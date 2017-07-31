@@ -11,7 +11,12 @@ const styles = {
     loadingScreen: {
         backgroundColor: 'rgba(0, 0, 0, 0.3)',
         flex: 1,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0
     },
     loadingSpinner: {
         flex: 1

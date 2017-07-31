@@ -30,12 +30,14 @@ export default class TicketList extends Component {
 
     render() {
         return (
-            <ScrollView style={{ flex: 1 }}>
+            <View style={{ flex: 1 }}>
                 {this.isLoading()}
-                <View style={{ padding: 10 }}>
-                    {this.renderTickets()}
-                </View>
-            </ScrollView>
+                <ScrollView>
+                    <View style={{ padding: 10 }}>
+                        {this.renderTickets()}
+                    </View>
+                </ScrollView>
+            </View>
         );
     }
 }
