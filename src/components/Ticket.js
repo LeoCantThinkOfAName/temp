@@ -10,7 +10,7 @@ export default class Ticket extends Component {
         open: false,
         start: false,
         started: false,
-        count: 300
+        count: 60
     }
 
     handleExpendPress() {
@@ -40,7 +40,7 @@ export default class Ticket extends Component {
     }
 
     handleReset() {
-        this.setState({ count: 300 });
+        this.setState({ count: 60 });
     }
 
     renderTitleColor() {
@@ -108,7 +108,7 @@ export default class Ticket extends Component {
                 <View style={{ alignSelf: 'center', marginTop: 10 }}>
                     <View style={{ flexDirection: 'row' }}>
                         <Text style={{ fontSize: 20 }}>{min} : </Text>
-                        <Text style={{ fontSize: 20 }}>{sec < 10 ? `0${sec}` : sec }</Text>
+                        <Text style={{ fontSize: 20 }}>{sec < 10 ? `0${sec}` : sec}</Text>
                     </View>
                     <TouchableHighlight 
                         style={{ backgroundColor: 'pink', marginTop: 10 }}
